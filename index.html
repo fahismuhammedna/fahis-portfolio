@@ -1,206 +1,88 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fahis | Portfolio</title>
+  <title>Fahis Portfolio</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a2e8f6a97d.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body>
-  <!-- Scroll to Top Button -->
-  <div class="scroll-up-btn"><i class="fas fa-angle-up"></i></div>
-
   <!-- Navbar -->
-  <nav class="navbar">
-    <div class="max-width">
-      <div class="logo"><a href="#">Fah<span>is</span></a></div>
-      <ul class="menu">
-        <li><a href="#home" class="menu-btn">Home</a></li>
-        <li><a href="#about" class="menu-btn">About</a></li>
-        <li><a href="#services" class="menu-btn">Hobbies</a></li>
-        <li><a href="#skills" class="menu-btn">Skills</a></li>
-        <li><a href="#contact" class="menu-btn">Contact</a></li>
+  <header>
+    <nav>
+      <h1>Fahis Portfolio</h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-      <div class="menu-btn"><i class="fas fa-bars"></i></div>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
-  <!-- Hero Section -->
-  <section class="home" id="home">
-    <div class="overlay"></div>
-    <div class="max-width">
-      <div class="home-content">
-        <div class="text-1">Hi, I’m</div>
-        <div class="text-2">Fahis</div>
-        <div class="text-3">A <span class="typing"></span></div>
-        <a href="#contact">Say Hello</a>
+  <!-- Home Section -->
+  <section id="home">
+    <div class="content">
+      <h2>Hi, I'm Fahis 👋</h2>
+      <p>I'm a 9th standard student passionate about web development. Check out my projects below!</p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2 class="title">My Projects</h2>
+    <div class="project-list">
+      <div class="project">
+        <h3>🎮 Game Website</h3>
+        <p>A fun website about games.</p>
+      </div>
+      <div class="project">
+        <h3>🎬 Movie Website</h3>
+        <p>A cool site for movies. (first attempt had bugs, but I'm improving!)</p>
       </div>
     </div>
   </section>
 
-  <!-- About Section -->
-  <!-- About Section -->
-  <section class="about" id="about">
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
     <div class="max-width">
-      <h2 class="title">About Me</h2>
-      <div class="about-content">
-        <div class="column right">
-          <div class="text">I'm Fahis, a <span class="typing-2"></span></div>
-          <p>Hi! My name is Fahis. I'm studying in 9th standard and I love technology, coding, and designing websites. 
-          I enjoy building projects, learning from mistakes, and improving step by step. 
-          My dream is to become a professional software engineer one day 🚀.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Hobbies / Services -->
-  <section class="services" id="services">
-    <div class="max-width">
-      <h2 class="title">My Hobbies</h2>
-      <div class="serv-content">
-        <div class="card">
-          <div class="box">
-            <i class="fas fa-laptop-code"></i>
-            <div class="text">Coding</div>
-            <p>I enjoy learning HTML, CSS, and JavaScript by building small projects and experimenting.</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="box">
-            <i class="fas fa-gamepad"></i>
-            <div class="text">Gaming</div>
-            <p>I love playing video games in my free time. It inspires me to build interactive web apps.</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="box">
-            <i class="fas fa-book"></i>
-            <div class="text">Learning</div>
-            <p>I like reading about science, space, and technology. Curiosity keeps me motivated.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills -->
-  <section class="skills" id="skills">
-    <div class="max-width">
-      <h2 class="title">My Skills</h2>
-      <div class="skills-content">
-        <div class="column left">
-          <div class="text">What I'm learning</div>
-          <p>Even though I'm in school, I'm practicing coding and design step by step. These are the skills I'm currently building.</p>
-        </div>
-        <div class="column right">
-          <div class="bars">
-            <div class="info"><span>HTML / CSS</span><span>70%</span></div>
-            <div class="line html"></div>
-          </div>
-          <div class="bars">
-            <div class="info"><span>JavaScript</span><span>50%</span></div>
-            <div class="line js"></div>
-          </div>
-          <div class="bars">
-            <div class="info"><span>Python</span><span>40%</span></div>
-            <div class="line react"></div>
-          </div>
-          <div class="bars">
-            <div class="info"><span>Creativity</span><span>90%</span></div>
-            <div class="line node"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Timeline -->
-  <section class="timeline" id="projects">
-    <div class="max-width">
-      <h2 class="title">My Coding Journey</h2>
-      <div class="timeline-content">
+      <h2 class="title">Contact Me</h2>
+      <form action="https://formsubmit.co/fahismuhammedn@gmail.com" method="POST">
         
-        <!-- Past Project 1 -->
-        <div class="timeline-item left">
-          <div class="content">
-            <h3><i class="fas fa-gamepad"></i> Game Website</h3>
-            <p>My first project. It looked great at first, but later became buggy and messy. 
-            Still, I learned a lot about HTML, CSS, and JavaScript.</p>
-          </div>
+        <!-- Name -->
+        <div class="field">
+          <input type="text" name="name" placeholder="Your Name" required>
         </div>
-
-        <!-- Past Project 2 -->
-        <div class="timeline-item right">
-          <div class="content">
-            <h3><i class="fas fa-film"></i> Movie Website</h3>
-            <p>I tried creating a movie site to show trailers and details. 
-            It had errors, but motivated me to keep improving my coding skills.</p>
-          </div>
+  
+        <!-- Email -->
+        <div class="field">
+          <input type="email" name="email" placeholder="Your Email" required>
         </div>
-
-        <!-- Future Project 1 -->
-        <div class="timeline-item left">
-          <div class="content">
-            <h3><i class="fas fa-rocket"></i> Rebuilding Game Website</h3>
-            <p>I plan to rebuild my Game Website, fixing bugs and making it modern and responsive.</p>
-          </div>
+  
+        <!-- Message -->
+        <div class="field textarea">
+          <textarea name="message" placeholder="Your Message" required></textarea>
         </div>
-
-        <!-- Future Project 2 -->
-        <div class="timeline-item right">
-          <div class="content">
-            <h3><i class="fas fa-video"></i> New Movie Website</h3>
-            <p>Next, I want to create a fresh Movie Website with better design, search features, and trailers.</p>
-          </div>
+  
+        <!-- Hidden Settings -->
+        <input type="hidden" name="_subject" value="New message from Portfolio!">
+        <input type="hidden" name="_next" value="https://fahismuhammedna.github.io/fahis-portfolio/thanks.html">
+        <input type="hidden" name="_captcha" value="false">
+  
+        <!-- Submit Button -->
+        <div class="button">
+          <button type="submit">Send Message</button>
         </div>
-
-        <!-- Future Project 3 -->
-        <div class="timeline-item left">
-          <div class="content">
-            <h3><i class="fas fa-lightbulb"></i> More Ideas</h3>
-            <p>I'll keep adding new projects as I grow my coding skills — maybe small apps, tools, or even games!</p>
-          </div>
-        </div>
-
-      </div>
+      </form>
     </div>
   </section>
-
-
-
-<!-- Contact Section -->
-<section class="contact" id="contact">
-  <div class="max-width">
-    <h2 class="title">Contact Me</h2>
-    <form action="https://formsubmit.co/fahismuhammedn@gmail.com" method="POST">
-      <div class="field">
-        <input type="text" name="name" placeholder="Your Name" required>
-      </div>
-      <div class="field">
-        <input type="email" name="email" placeholder="Your Email" required>
-      </div>
-      <div class="field textarea">
-        <textarea name="message" placeholder="Your Message" required></textarea>
-      </div>
-      <div class="button">
-        <button type="submit">Send Message</button>
-      </div>
-    </form>
-  </div>
-</section>
-
 
   <!-- Footer -->
   <footer>
-    <span>© 2025 Fahis | Student Portfolio</span>
+    <p>© 2025 Fahis Portfolio | Built with ❤️</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
+
+
 
 
